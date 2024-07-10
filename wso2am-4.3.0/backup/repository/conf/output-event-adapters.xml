@@ -13,7 +13,7 @@
   ~ specific language governing permissions and limitations under the License.
   -->
 
-<outputEventAdaptersConfig>
+<outputEventAdaptersConfig xmlns:svns="http://org.wso2.securevault/configuration">
 
     <adapterConfig type="wso2event">
         <property key="default.thrift.tcp.url">tcp://localhost:7612</property>
@@ -100,6 +100,8 @@
         <property key="mail.smtp.port">587</property>
         <property key="mail.smtp.starttls.enable">true</property>
         <property key="mail.smtp.auth">true</property>
+        <property key="mail.smtp.signature">abcd</property>
+        <property key="mail.smtp.replyTo">abcd@gmail.com</property>
         <!-- Thread Pool Related Properties -->
         <property key="minThread">8</property>
         <property key="maxThread">100</property>
@@ -144,5 +146,6 @@
         <property key="autoReleaseConnection">true</property>
         <property key="maxConnectionsPerHost">50</property>
     </adapterConfig>
+
 
 </outputEventAdaptersConfig>
